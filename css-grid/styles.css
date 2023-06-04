@@ -28,7 +28,7 @@
     padding: 0;
     overflow: hidden;
     text-align: center;
-    background-color: #ff4b59;    
+    background-color: #af3549;    
   }
   
   .menu li {
@@ -77,6 +77,25 @@
       text-align: left;
     }
   }
+
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  } 
   
   .title h1 {
     padding: 20px;
@@ -105,8 +124,9 @@
     
   .container .footer {
     grid-column: 1/6;
-    background: #ff4b59;
+    background: #af3549;
     color: #ffffff;
+    text-align: center;
   }
 
   .container .header {
@@ -128,6 +148,8 @@
     padding: 20px;
     margin-top: 5px;
     color: #dfe6e9;
+    align-items: center;
+    justify-content: center;
   }
   
   .video-container {
@@ -178,13 +200,25 @@
   }
   
   .container>.sidebar-tema img {
-    height: 200px;
+    width: 100%;
+    height: auto;
     vertical-align: top;
-    margin-top: 8px;
+    margin-top: 70px;
+    border: 1px solid #000;
   }
   
   .container>.related-post {
-    background-color: #ff4b59;
+    background-color: #af3549;
+    color: #ffffff;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+  }
+
+  .content>.article>.related-post {
+    background-color: #af3549;
     color: #ffffff;
     height: 180px;
     display: flex;
@@ -198,6 +232,32 @@
     color: #000000;
     background: #ffffff;
   }
+
+  .content>.article>.related-post:hover {
+    cursor: pointer;
+    background: #ffffff;
+    color: #000;
+  }
+
+  .content img {
+    width: 150px;
+    height: auto;
+    vertical-align: top;
+    margin-top: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .content h2 {
+    color: #fff;
+    text-align: center;
+  }
+
+  .content>.article>.related-post h2:hover {
+    color: #000;
+  }
+  
   
   @media screen and (max-width: 768px) {
     .header {
