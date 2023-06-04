@@ -13,16 +13,20 @@
 </head>
 
 <body>
-    <header class="title">
-        <h1>CSS Grid</h1>
-    </header>
-
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav class="menu">
+      <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="index.html">Tema seleccionado</a></li>
+        <li><a href="index.html">Mockup</a></li>
+        <li><a href="index.html">Acerca de</a></li>
+      </ul>
+    </nav>
     <div class="container">
         <header class="header">
-            <h1>
-                Logo
-            </h1>
-        </header>
+            <img class="img-header" src="img/1wd-logo.svg" alt="">
+          </header>
         <main class="content">
             <article class="article">
                 <h1>Title</h1>
@@ -64,7 +68,7 @@
                 </p>
             </article>
         </main>
-        <aside class="sidebar">
+        <aside class="sidebar-tema">
             <div class="image">
                 <img src="img/logohome.svg" alt="">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nisi!</p>
